@@ -32,7 +32,6 @@ function getTimezoneAndTime(lat, lon) {
             console.log(data);  // Log the response for debugging
             if (data && data.timezoneId) {
                 var timezone = data.timezoneId;  // Get the timezone from the response
-                // Now, fetch the current time using the timezone
                 getCurrentTime(timezone);  // Call the next function to get current time
             } else {
                 console.log("Timezone data not found.");
