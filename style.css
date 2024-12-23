@@ -1,6 +1,6 @@
 /* Ensure the map takes up the full width and height of the screen */
 #map {
-    height: 100vh;  /* Full height of the viewport */
+    height: 500px;  /* Full height of the viewport */
     width: 100%;    /* Full width */
 }
 
