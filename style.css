@@ -1,0 +1,29 @@
+/* Ensure the map takes up the full width and height of the screen */
+#map {
+    height: 100vh;  /* Full height of the viewport */
+    width: 100%;    /* Full width */
+}
+
+/* For smaller screens, adjust the map height */
+@media only screen and (max-width: 600px) {
+    #map {
+        height: 50vh;  /* 50% height of the screen on mobile */
+    }
+}
+
+/* Styling for the timezone and time information display */
+.timezone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Styling for alerts and other elements on smaller screens */
+@media only screen and (max-width: 600px) {
+    .timezone-container {
+        font-size: 14px;  /* Smaller font size */
+        padding: 15px;    /* Adjust padding */
+    }
+}
