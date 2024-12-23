@@ -24,7 +24,7 @@ map.on('click', function(event) {
 // Function to fetch the timezone using latitude and longitude
 function getTimezoneAndTime(lat, lon) {
     // GeoNames API URL for timezone
-    var apiUrl = `http://api.geonames.org/timezoneJSON?lat=${lat}&lng=${lon}&username=charish`; // Replace with your GeoNames username
+    var apiUrl = `https://api.geonames.org/timezoneJSON?lat=${lat}&lng=${lon}&username=charish`; // Replace with your GeoNames username
 
     fetch(apiUrl)
         .then(response => response.json())  // Convert the response to JSON
